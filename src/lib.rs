@@ -48,7 +48,6 @@ impl RedditClient {
         // let res = c.get("https://www.reddit.com/").send().await?;
         let url           = "https://www.reddit.com/api/v1/access_token";
         // println!("{:?}",&self.auth.client_id);
-        let body   =  format!( "grant_type=password&username={}&password={}","naveendavisv".to_string(),"Myrpass21!".to_string() );
         let mut Myheader = HeaderMap::new();
         let username = env::var("username").unwrap();
         let password = env::var("password").unwrap();
